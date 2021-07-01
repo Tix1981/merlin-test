@@ -11,6 +11,7 @@ export type Column = {
 };
 
 type Kanban = {
+  addingError:string,
   columns: Column[];
   addTicket: (ticket: Ticket, column: string) => void;
   deleteTicket: (ticket: string) => void;
